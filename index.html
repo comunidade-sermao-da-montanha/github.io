@@ -27,6 +27,27 @@
             font-size: 1.2em;
             color: #555;
         }
+        nav {
+            margin: 25px 0;
+            padding: 15px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        nav a {
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #8B0000;
+            color: #fff;
+        }
         .mensagem {
             background-color: #fff;
             padding: 20px;
@@ -36,6 +57,37 @@
         }
         .mensagem h2 {
             color: #8B0000;
+        }
+        .secao {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .secao h2 {
+            color: #8B0000;
+            border-left: 5px solid #8B0000;
+            padding-left: 15px;
+        }
+        .secao ul {
+            list-style: none;
+            padding: 0;
+        }
+        .secao li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0ece6;
+        }
+        .secao li:last-child {
+            border-bottom: none;
+        }
+        .secao a {
+            color: #8B0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .secao a:hover {
+            text-decoration: underline;
         }
         footer {
             margin-top: 40px;
@@ -49,30 +101,44 @@
 </head>
 <body>
     <header>
-        <img src="Logo Sermão.jpg" alt="Logo da nossa comunidade" style="max-width: 150px; height: auto; display: block; margin: 0 auto 15px auto;">
+        <img src="Logo_Sermão.jpg" alt="Logo da nossa comunidade" style="max-width: 150px; height: auto; display: block; margin: 0 auto 15px auto;">
         <h1>Comunidade Sermão da Montanha</h1>
         <p>"A fé é a certeza daquilo que esperamos" (Hebreus 11:1)</p>
     </header>
 
+    <nav>
+        <a href="index.html">🏠 Início</a>
+        <a href="teologia.html">📚 Teologia</a>
+        <a href="catecismo.html">📖 Catecismo</a>
+        <a href="oracoes.html">🙏 Orações</a>
+    </nav>
+
     <section class="mensagem">
         <h2>Bem-vindo à nossa comunidade!</h2>
-        <p>É com grande alegria que recebemos você em nosso site. Aqui você encontrará informações sobre teologia catíloca, o catecismo da Igreja grupos, orações e muito mais.</p>
+        <p>É com grande alegria que recebemos você em nosso site. Aqui você encontrará informações sobre teologia católica, o catecismo da Igreja, grupos de oração e muito mais.</p>
         <p>Que a paz de Cristo esteja sempre com você e sua família.</p>
     </section>
 
-    <section>
-        <h2>Teologia</h2>
+    <section class="secao">
+        <h2>📚 Teologia</h2>
         <ul>
-            <li><strong>Patrística</li>
-            <li><strong>Escolástica/li>
-            <li><strong><a href="teologia.html">📖 Teologia Contemporânea</a>
+            <li><a href="teologia/modestia-no-vestir.html">📖 Modéstia no Vestir</a> - Uma análise da virtude da modéstia à luz do Catecismo</li>
+            <li><a href="teologia.html">📚 Veja todos os artigos de Teologia</a></li>
         </ul>
     </section>
 
-    <section>
-        <h2>Catecismo</h2>
-        <p>Orações</p>
-        <p>Tradição da Igreja</p>
+    <section class="secao">
+        <h2>📖 Catecismo</h2>
+        <ul>
+            <li>Em breve: estudos sobre o Catecismo da Igreja Católica</li>
+        </ul>
+    </section>
+
+    <section class="secao">
+        <h2>🙏 Orações</h2>
+        <ul>
+            <li>Em breve: orações e devoções da nossa comunidade</li>
+        </ul>
     </section>
 
     <footer>
